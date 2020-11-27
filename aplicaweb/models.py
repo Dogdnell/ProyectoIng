@@ -11,7 +11,6 @@ class descuento(models.Model):
 
 
 class pago(models.Model):
-    fecha_de_pago = models.DateField(null=True)
     forma_de_pago = models.CharField (max_length=50, verbose_name='Forma de pago')
     num_de_operacion = models.IntegerField (max_length=64)
     tipo_de_cuenta = models.CharField (max_length=45)
